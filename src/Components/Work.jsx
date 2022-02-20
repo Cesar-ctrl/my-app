@@ -47,7 +47,7 @@ javascript knowledge. It also allowed me to learn how to consume REST web servic
             
             <a href="https://cesar-ctrl.github.io/proyecto2/"className="card">
                 
-                <img src={process.env.PUBLIC_URL + '/img/CrudTareas.PNG'} alt="home" />
+                <img src={process.env.PUBLIC_URL +'/img'+ '/CrudTareas.PNG'} alt="home" />
                 <div className="card-body">
                     <p className="card-text">Developed a CRUD of tasks that is connected to a database, everything that is not deleted stays in the database.
 I've done it with JavaScript, React and Bootstrap, it has state hooks.</p>
