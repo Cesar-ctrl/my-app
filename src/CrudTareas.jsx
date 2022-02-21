@@ -24,7 +24,7 @@ function CrudTareas() {
     }
 
     const eliminarTarea = (id) => {
-        const arrayFilter= tareas.filter(item=>item.id!==id)//
+        const arrayFilter= tareas.filter(item=>item.id!==id)//elimina tarea usando el id
         setTareas(arrayFilter)
     }
 
@@ -41,6 +41,7 @@ function CrudTareas() {
         setError("Escribe algo.....")
         return
         }
+        //Se busca un item por su id
         const arrayEditado= tareas.map(
         item => item.id===id? {id:id, nombreTarea:tarea}:item
         )

@@ -7,11 +7,11 @@ import Nosotros from "./Components/Nosotros"
 import Usuarios from "./Components/Usuarios"
 import Formacion from "./Components/Formacion";
 import CrudTareas from "./CrudTareas";
-
+//Importamos todos los Componentes que hemos creado o vamos a usar
+//React Router proporciona un <Link> componente para crear enlaces en su aplicación. 
+//Donde sea que renderice un <Link>, se representará un ancla <a> en su documento HTML.
 function App() {
     return (
-        
-        
         <Router>
             <div className="container mt-5">
                 
@@ -31,6 +31,9 @@ function App() {
                     <Link className="btn btn-datk btn-sm" to ="/tareas">
                         Crud de Tareas 
                     </Link>
+                    <Link className="btn btn-datk btn-sm" to ="/nosotros">
+                        Nosotros 
+                    </Link>
                 </div>
 
                 <hr/>
@@ -39,7 +42,7 @@ function App() {
                     <Route path="/formacion" element={<Formacion/>}/>
                     <Route path="/work" element={<Work/>}/>
                     <Route path="/tareas" element={<CrudTareas/>}/>
-                    <Route path="/nosotros/:id" element={<Usuarios/>}/>
+                    <Route path="/nosotros" element={<Nosotros/>}/>
                     <Route path="/" element={<Inicio/>}/>
                     <Route path="/nosotros/:id" element={<Usuarios/>}/>
                 </Routes>
@@ -74,6 +77,10 @@ function App() {
                     <li className="nav-item">
                         <Link className="nav-link px-2 text-muted" to ="/tareas">
                             Crud de Tareas 
+                        </Link></li>
+                    <li className="nav-item">
+                        <Link className="nav-link px-2 text-muted" to ="/nosotros">
+                            Nosotros 
                         </Link></li>
                 </ul>
                     
