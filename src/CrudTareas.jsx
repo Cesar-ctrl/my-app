@@ -24,7 +24,7 @@ function CrudTareas() {
     }
 
     const eliminarTarea = (id) => {
-        const arrayFilter= tareas.filter(item=>item.id!==id)
+        const arrayFilter= tareas.filter(item=>item.id!==id)//
         setTareas(arrayFilter)
     }
 
@@ -57,7 +57,7 @@ function CrudTareas() {
 
         return (
             <div className="container mt-5">
-            <h1 className="text-center">CRUD</h1>
+            <h1 className="text-center">CRUD de Tareas</h1>
             <hr/>
             <div className="row mt-2">
             <div className="col-8">
