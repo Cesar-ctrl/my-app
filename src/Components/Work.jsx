@@ -2,29 +2,18 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Switch, Route,  Link } from "react-router-dom";
 
 const Works = () => {
-
-    const [works, setWorks] = React.useState([])
+    
     const css = `
     .card {
       width: 18rem;
     }
   `
 
-    const obtenerDAtos = async () =>{
-        const data = await fetch("https://jsonplaceholder.typicode.com/users/")
-        const trabajos = await data.json()
-        console.log(trabajos)
-        setWorks(trabajos)
-    }
-
-    useEffect(() =>{
-        obtenerDAtos()
-    }, [])
 
     return <div>
         <h1>Works</h1>
         <div className="card-group">
-            <div className="card">
+            <a href='https://github.com/Cesar-ctrl/cesarinsta' className="card">
                 <style>{css}</style>
                 <img src={process.env.PUBLIC_URL + '/img/home.PNG'} alt="home" />{/** process.env.PUBLIC_URL trae la url baseo url pública. */}
                 <div className="card-body">
@@ -32,7 +21,7 @@ const Works = () => {
 Javascript. The project is deployed, you can upload images, comment on images, like images, view user
 profiles and delete or edit comments on your own posts.</p>
                 </div>
-            </div>
+            </a>
 
             <a href="https://cesar-ctrl.github.io"className="card">
                 <style>{css}</style>
