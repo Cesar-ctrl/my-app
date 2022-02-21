@@ -20,14 +20,13 @@ const Works = () => {
     useEffect(() =>{
         obtenerDAtos()
     }, [])
-    
 
     return <div>
         <h1>Works</h1>
         <div className="card-group">
             <div className="card">
                 <style>{css}</style>
-                <img src={} alt="home" />
+                <img src={process.env.PUBLIC_URL + '/img/home.PNG'} alt="home" />
                 <div className="card-body">
                     <p className="card-text">To increase my skills as a Full-Stack developer, I developed a social network using PHP, Laravel, and
 Javascript. The project is deployed, you can upload images, comment on images, like images, view user
