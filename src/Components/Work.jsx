@@ -20,13 +20,14 @@ const Works = () => {
     useEffect(() =>{
         obtenerDAtos()
     }, [])
+    
 
     return <div>
         <h1>Works</h1>
         <div className="card-group">
             <div className="card">
                 <style>{css}</style>
-                <img src={process.env.PUBLIC_URL + '/img/home.PNG'} alt="home" />
+                <img src={} alt="home" />
                 <div className="card-body">
                     <p className="card-text">To increase my skills as a Full-Stack developer, I developed a social network using PHP, Laravel, and
 Javascript. The project is deployed, you can upload images, comment on images, like images, view user
@@ -36,7 +37,7 @@ profiles and delete or edit comments on your own posts.</p>
 
             <a href="https://cesar-ctrl.github.io"className="card">
                 <style>{css}</style>
-                <img src={process.env.PUBLIC_URL + '/img/Dnd.PNG'} alt="home" />
+                <img src={'my-app/img/Dnd.PNG'} alt="home" />
                 <div className="card-body">
                     <p className="card-text">Designed and developed a web guide about Dungeons and Dragons game, using HTML, CSS and
 JavaScript, among other technologies. This project helped me to improve my layout skills, as well as my
