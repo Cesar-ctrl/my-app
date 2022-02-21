@@ -6,7 +6,7 @@ import Work from "./Components/Work"
 import Nosotros from "./Components/Nosotros"
 import Usuarios from "./Components/Usuarios"
 import Formacion from "./Components/Formacion";
-import Footer from "./Components/Footer";
+import CrudTareas from "./CrudTareas";
 
 function App() {
     return (
@@ -28,19 +28,22 @@ function App() {
                     <Link className="btn btn-datk btn-sm" to ="/contacto">
                         Contacto 
                     </Link>
+                    <Link className="btn btn-datk btn-sm" to ="/tareas">
+                        Crud de Tareas 
+                    </Link>
                 </div>
 
                 <hr/>
-                
                 <Routes>
-                
                     <Route path="/contacto" element={<Contacto/>}/>
                     <Route path="/formacion" element={<Formacion/>}/>
                     <Route path="/work" element={<Work/>}/>
-                    
+                    <Route path="/tareas" element={<CrudTareas/>}/>
+                    <Route path="/nosotros/:id" element={<Usuarios/>}/>
                     <Route path="/" element={<Inicio/>}/>
                     <Route path="/nosotros/:id" element={<Usuarios/>}/>
                 </Routes>
+                
             </div>
             <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             
@@ -68,9 +71,14 @@ function App() {
                         <Link className="nav-link px-2 text-muted" to ="/contacto">
                             Contacto 
                         </Link></li>
+                    <li className="nav-item">
+                        <Link className="nav-link px-2 text-muted" to ="/tareas">
+                            Crud de Tareas 
+                        </Link></li>
                 </ul>
                     
             </footer>
+            
         </Router>
         
     );
