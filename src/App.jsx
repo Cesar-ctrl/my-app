@@ -15,7 +15,7 @@ function App() {
         <Router>
             <div className="container mt-5">
                 
-                <div className="btn-group">
+                <header className="btn-group">
                     <Link className="btn btn-datk btn-sm" to ="/">
                         Inicio
                     </Link>
@@ -34,7 +34,7 @@ function App() {
                     <Link className="btn btn-datk btn-sm" to ="/nosotros">
                         Nosotros 
                     </Link>
-                </div>
+                </header>
 
                 <hr/>
                 <Routes>
