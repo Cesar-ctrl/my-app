@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Switch, Route,  Link } from "react-router-dom";
+//Eliminar
 
+//cambiar por juego
 const Nosotros = () => {
 
     // Declaración de una variable de estado que llamaremos "users"
