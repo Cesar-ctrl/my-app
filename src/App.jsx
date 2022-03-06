@@ -23,22 +23,22 @@ function App() {
             <div className="container mt-5">
 
                     <header className="btn-group">
-                        <Link className="btn btn-datk btn-sm" to="/my-app/index.html">
+                        <Link className="btn btn-dark btn-sm" to="/my-app/index.html">
                             Inicio
                         </Link>
-                        <Link className="btn btn-datk btn-sm" to="/formacion">
+                        <Link className="btn btn-dark btn-sm" to="/formacion">
                             Formacion
                         </Link>
-                        <Link className="btn btn-datk btn-sm" to="/work">
+                        <Link className="btn btn-dark btn-sm" to="/work">
                             Work
                         </Link>
-                        <Link className="btn btn-datk btn-sm" to="/contacto">
+                        <Link className="btn btn-dark btn-sm" to="/contacto">
                             Contacto
                         </Link>
-                        <Link className="btn btn-datk btn-sm" to="/tareas">
+                        <Link className="btn btn-dark btn-sm" to="/tareas">
                             Crud de Tareas
                         </Link>
-                        <Link className="btn btn-datk btn-sm" to="/nosotros">
+                        <Link className="btn btn-dark btn-sm" to="/nosotros">
                             Nosotros
                         </Link>
                     </header>
