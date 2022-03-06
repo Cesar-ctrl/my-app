@@ -7,19 +7,13 @@ import Nosotros from "./Components/Nosotros"
 import Usuarios from "./Components/Usuarios"
 import Formacion from "./Components/Formacion";
 import CrudTareas from "./CrudTareas";
-import Ini from "./Components/Ini";
 
 //Importamos todos los Componentes que hemos creado o vamos a usar
 //React Router proporciona un <Link> componente para crear enlaces en su aplicación. 
 //Donde sea que renderice un <Link>, se representará un ancla <a> en su documento HTML.
 function App() {
-    
-    window.onload = function() {
-        window.location.replace("localhost:3000/my-app/index.html")
-    }
-    return (
-        
-    <Router>
+    return(
+        <Router>
             <div className="container mt-5">
 
                     <header className="btn-group">
@@ -45,14 +39,13 @@ function App() {
 
                     <hr />
                     <Routes>
-                        *
+                        
                         <Route path="/contacto" element={<Contacto />} />
                         <Route path="/formacion" element={<Formacion />} />
                         <Route path="/work" element={<Work />} />
                         <Route path="/tareas" element={<CrudTareas />} />
                         <Route path="/nosotros" element={<Nosotros />} />
                         <Route path="/inicio" element={<Inicio />} />
-                        <Route path="/" element={<Ini/>} />
                         <Route path="/nosotros/:id" element={<Usuarios />} />
                     </Routes>
 
