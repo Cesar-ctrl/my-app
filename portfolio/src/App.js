@@ -6,6 +6,7 @@ import Work from "./Components/Work"
 import Nosotros from "./Components/Nosotros"
 import Usuarios from "./Components/Usuarios"
 import Formacion from "./Components/Formacion";
+import ParticleBackground from "./ParticleBackground";
 
 
 //Importamos todos los Componentes que hemos creado o vamos a usar
@@ -14,6 +15,7 @@ import Formacion from "./Components/Formacion";
 function App() {
   return(
     <Router>
+      <ParticleBackground />
       <div className="container mt-5">
         <header className="btn-group">
           <Link className="btn btn-dark btn-sm" to="/inicio">
@@ -32,6 +34,8 @@ function App() {
             Nosotros
           </Link>
         </header>
+
+        
 
         <hr />
         <Routes>
@@ -75,10 +79,11 @@ function App() {
 
       </footer>
           
-
+      
     </Router>
       
   );
 }
+
 
 export default App;
